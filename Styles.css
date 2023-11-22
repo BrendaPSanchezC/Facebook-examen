@@ -1,0 +1,105 @@
+body{
+    background-color: #f1f3f6;
+}
+h2{
+    color: #0c0d11;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+.img{
+    width: 350px;
+}
+div .lado-derecho{
+    
+    display: flex;
+    justify-content: end;
+
+}
+.sombra{
+    /*Sombra del elemento en el formulario y eso se hace con una pagina que dijo el maestro*/
+        box-shadow: 0px 0px 15px 0px rgba(112,112,112,0.48);
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(112,112,112,0.48);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(112,112,112,0.48);
+        background-color: var(--blanco);/*Color de fondo*/
+        padding: 2rem;/*Espacio interior*/
+        border-radius: 2rem;/*Esquinas redondeadas*/
+}
+
+.formulario {
+    width: min(60rem, 100%);/*Esto nos sirve parq eu por ejemplo si tenemos un dispositivo movil con 488px por lo que es mas pequeño y por lo que tomara el 100% y no el de los 60rem y en cambio si tenemos una tablet de 768px ahi si es menor el 60rem por lo que tomara ese valor*/
+    margin: 0 auto;
+    /*Usarlo solo si elpadre no es un display y si es display pues se tendra que usar el justify-content, ya que el form tiene por defecto block*/
+    padding: 2rem;/*Espacio interior*/
+    border-radius: 2rem;/*El borde para que sea un poco redondeado*/
+  }
+
+  .formulario fieldset{
+    border: none;/*Quitarle el borde*/
+  }
+  .campo{
+    margin-bottom: 1rem;/*Margen inferior*/
+    border-color: #80accf;
+  }
+
+
+.campo label{
+    font-weight: bold;/*Negritas*/
+    margin-bottom: .5rem;/*Margen inferior*/
+    display: block;/*Esto logra que el el label tome todo el espacio disponible y estar separado del input*/
+    border: none;
+
+}
+ .formulario .input-text :hover{
+    border-color: #80accf;
+}
+.formulario .input-text{
+    width: 90%;
+    border-color: #e9e9ea;
+    padding: 1.5rem;/*Espacio interior*/
+    border-radius: .5rem;/*El radio*/
+
+}
+a{
+    text-decoration: none;
+    color: #3c85dd;
+    padding: 5rem;
+
+}
+.boton{
+    background-color: #1977f1;/*color de fondo*/
+    text-decoration: none;/*quitar el subrayado*/
+    border-radius: 0.5rem;/*esquinas redondeadas */
+    padding: 1rem;
+    color: #fafcff;/*Color del texto */ 
+    margin-top: 3rem;/*espacio exterior hacia arriba*/
+    font-weight: bold;/*negritas*/
+    font-size: 1rem;/*tamaño del texto*/
+    text-transform: uppercase;/*poner mayusculas*/
+    text-align: center;/*centrar texto*/
+    width: 100%;/*ancho del boton, que abarque el 90% si la pantalla es pequeña */
+    border: none;/*Quitar el subrayado*/
+    text-transform: initial;
+
+}
+.boton2{
+    background-color: #41b729;/*color de fondo*/
+    text-decoration: none;/*quitar el subrayado*/
+    border-radius: 0.5rem;/*esquinas redondeadas */
+    padding: 1rem;
+    color: #fafcff;/*Color del texto */ 
+    margin-top: 3rem;/*espacio exterior hacia arriba*/
+    font-weight: bold;/*negritas*/
+    font-size: 1rem;/*tamaño del texto*/
+    text-transform: uppercase;/*poner mayusculas*/
+    text-align: center;/*centrar texto*/
+    width: 50%;/*ancho del boton, que abarque el 90% si la pantalla es pequeña */
+    border: none;/*Quitar el subrayado*/
+    text-align: center;
+    text-transform:initial;
+
+}
+.footer{
+    text-align: end;
+    color: #0c0d11;
+    font-family: Arial, Helvetica, sans-serif;
+}
